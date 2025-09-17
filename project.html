@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form </title>
+    <link rel="stylesheet" href="A3.styles.css">
+</head>
+
+<body>
+    <form action="password.php" method="POST">
+        <label for="name">UserName:</label>
+        <input type="text" name="name" placeholder="UserName" ; title="Minimum 10 characters, include one letter"
+            required><br><br>
+        <label for="password"> Password :</label>
+        <input type="password" name="password" placeholder="Password"
+            pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[~!@#$%^&()_+`\-={}|:;'<>,.?\/]).{8,}$"
+            title="Minimum 8 characters, include one letter, one number, and one special character." required><br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+</body>
+
+</html>
